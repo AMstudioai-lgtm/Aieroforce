@@ -1,0 +1,7 @@
+{
+  "name": "Sneaker Product Showcase",
+  "description": "Interface interactive de sélection de sneakers avec séparation bicolore et animations fluides de transition 3D.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
