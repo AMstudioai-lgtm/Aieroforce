@@ -30,7 +30,7 @@ export const ThumbnailGallery: React.FC<ThumbnailGalleryProps> = ({
   return (
     /*
       Conteneur des cartes :
-      - Mobile : En bas de la zone image (bottom-[48%]), pleine largeur
+      - Mobile : En bas de la zone image (bottom-[26%]), pleine largeur
       - Desktop : Sur le bas de l'image droite (bottom-5 sm:bottom-7 left-1/2 right-0)
       - Padding-top généreux (pt-4 sm:pt-6) pour que la carte agrandie et son badge ne soient JAMAIS coupés en haut
     */
@@ -39,7 +39,7 @@ export const ThumbnailGallery: React.FC<ThumbnailGalleryProps> = ({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
       id="thumbnail-gallery-sidebar"
-      className="absolute bottom-[48.5%] md:bottom-5 lg:bottom-7 left-0 md:left-1/2 right-0 z-25 md:z-15 pointer-events-auto overflow-hidden pt-4 sm:pt-6"
+      className="absolute bottom-[26.5%] md:bottom-5 lg:bottom-7 left-0 md:left-1/2 right-0 z-25 md:z-15 pointer-events-auto overflow-hidden pt-4 sm:pt-6"
     >
       <div
         ref={containerRef}

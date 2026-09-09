@@ -187,7 +187,7 @@ export default function App() {
           <div className="relative w-full h-full max-w-[1920px] mx-auto overflow-hidden">
             <SplitBackground currentSneaker={activeSneaker} />
             <SneakerStage currentSneaker={activeSneaker} direction={direction} />
-            <div className="absolute inset-x-0 bottom-0 top-[52%] md:top-0 md:inset-y-0 md:left-0 md:w-1/2 z-25 flex items-center pointer-events-none">
+            <div className="absolute inset-x-0 bottom-0 top-[75%] md:top-0 md:inset-y-0 md:left-0 md:w-1/2 z-25 flex items-center pointer-events-none">
               <SneakerHeroText currentSneaker={activeSneaker} direction={direction} />
             </div>
             <StepArrows onPrev={handlePrev} onNext={handleNext} />

@@ -112,7 +112,7 @@ export const StepArrows: React.FC<StepArrowsProps> = ({ onPrev, onNext }) => {
   return (
     <div 
       id="step-arrows-container"
-      className="absolute top-[22%] sm:top-[24%] md:top-1/2 -translate-y-1/2 left-3 right-3 md:left-auto md:right-10 z-30 flex items-center justify-between md:justify-end gap-3 pointer-events-none"
+      className="absolute top-[22%] sm:top-[24%] md:top-1/2 -translate-y-1/2 left-3 right-3 md:left-1/2 md:right-0 md:px-6 lg:px-12 z-30 flex items-center justify-between gap-3 pointer-events-none"
     >
       <button
         id="btn-prev-sneaker"

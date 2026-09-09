@@ -11,7 +11,7 @@ export const SneakerStage: React.FC<SneakerStageProps> = ({ currentSneaker, dire
   return (
     <div 
       id="sneaker-stage-container"
-      className="absolute inset-x-0 top-0 h-[52%] md:h-full md:left-[50%] md:right-0 z-10 overflow-hidden pointer-events-none select-none"
+      className="absolute inset-x-0 top-0 h-[75%] md:h-full md:left-[50%] md:right-0 z-10 overflow-hidden pointer-events-none select-none"
     >
       <AnimatePresence mode="popLayout" custom={direction}>
         <motion.div
