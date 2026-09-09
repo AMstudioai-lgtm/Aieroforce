@@ -4,9 +4,10 @@ import { ChevronDown } from 'lucide-react';
 
 interface ImmersiveHeroProps {
   onUnlock: () => void;
+  isInitialMount?: boolean;
 }
 
-export const ImmersiveHero: React.FC<ImmersiveHeroProps> = ({ onUnlock }) => {
+export const ImmersiveHero: React.FC<ImmersiveHeroProps> = ({ onUnlock, isInitialMount = false }) => {
   const touchStartY = useRef(0);
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -31,7 +32,7 @@ export const ImmersiveHero: React.FC<ImmersiveHeroProps> = ({ onUnlock }) => {
   return (
     <motion.section
       id="immersive-hero-lockscreen"
-      initial={{ y: '-100%' }}
+      initial={{ y: isInitialMount ? '0%' : '-100%' }}
       animate={{ y: '0%' }}
       exit={{ y: '-100%' }}
       transition={{ duration: 0.65, ease: [0.32, 1, 0.32, 1] }}

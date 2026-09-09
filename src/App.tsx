@@ -127,6 +127,11 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
+  const isInitialMount = useRef(true);
+  if (!isHeroOpen) {
+    isInitialMount.current = false;
+  }
+
   const handleNavigateSection = (sectionId: string) => {
     if (sectionId === 'immersive-hero-section') {
       handleOpenHero();
@@ -156,7 +161,7 @@ export default function App() {
       */}
       <AnimatePresence>
         {isHeroOpen && (
-          <ImmersiveHero key="immersive-hero" onUnlock={handleDismissHero} />
+          <ImmersiveHero key="immersive-hero" onUnlock={handleDismissHero} isInitialMount={isInitialMount.current} />
         )}
       </AnimatePresence>
 
